@@ -1,0 +1,21 @@
+@mixin section-styles($bg-color) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $bg-color;
+}
+
+.header {
+    grid-area: header;
+    height: 20vh;
+    @include section-styles(rgb(209, 172, 172));
+
+    .menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        height: 100%;
+        gap: 1rem;
+    }
+}
